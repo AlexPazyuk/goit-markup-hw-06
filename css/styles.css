@@ -544,13 +544,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .footer-container{
     display: flex;
     align-items: baseline;
-    gap: 120px;
 }
 .logo-text-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-right: 120px;
 }
 .footer-logo{
     display: inline-block;
@@ -570,6 +570,7 @@ max-width: 264px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    margin-right: 80px;
 }
 .footer-title{
     display: flex;
@@ -601,6 +602,69 @@ justify-content: center;
 .socials-footer-link:focus {
     background-color: var(--success-color);
 }
+.sub-container {
+ margin-right: 24px;   
+
+color: var(--ultimate-white);
+}
+.sub-label {
+   display: flex;
+    flex-direction: column;    
+}
+.sub-title{
+    margin-bottom: 16px;
+    
+    font-weight: 500;
+}
+.sub-input{
+    position: relative;
+    border: 1px solid var(--ultimate-white);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        color: var(--ultimate-white);
+
+        width: 264px;
+        height: 40px;
+        padding-left: 16px;
+}
+.sub-input::placeholder {
+    display: flex;
+    align-items: center;
+
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--ultimate-white);
+
+}
+.sub-button-container{
+    position: relative;
+
+}
+.sub-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    
+    position: absolute;
+    left: 0;
+    top: 20px;
+
+    background: var(--brand-color);
+    color: var(--ultimate-white);
+    border: 1px transparent;
+    border-radius: 4px;
+
+    transition: background-color var(--animation);
+             
+}
+.sub-button:hover,
+.sub-button:focus {
+    background-color: var(--hover-color);
+        }
 
 /* Modal Styles */
 .backdrop {
@@ -650,7 +714,7 @@ justify-content: center;
     opacity: 0;
 }
 
-.modal-btn {
+.modal-close-button {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -671,9 +735,48 @@ justify-content: center;
 
     transition: background-color var(--animation) fill var(--animation);
 }
-.modal-btn:hover,
-.modal-btn:focus{
+.modal-close-button:hover,
+.modal-close-button:focus{
 background-color: var(--hover-color);
 fill: var(--ultimate-white);
 }
 
+.modal-title {
+    color: var(--dark-bcg);
+    display: block;
+    text-align: center;
+    margin: 48px 24px 16px 24px;
+
+    font-weight: 500;
+}
+
+.modal-form {}
+
+.modal-form-label {}
+
+.modal-form-field {}
+
+.modal-form-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+}
+
+.modal-form-icon {}
+
+.modal-form-message {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+
+        width: 360px;
+            height: 120px;
+}
+
+.modal-form-agreement {}
+
+.modal-form-agreement-box {}
+
+.modal-form-agreement-text {}
+
+.modal-form-agreement-link {}
+
+.modal-button {}
