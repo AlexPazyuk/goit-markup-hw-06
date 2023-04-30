@@ -619,7 +619,16 @@
           </label>
 
           <label class="modal-form-agreement">
-            <input class="modal-form-agreement-box" name="user_agreement" />
+            <input
+              class="modal-form-agreement-box visually-hidden"
+              type="checkbox"
+              name="user_agreement"
+            />
+            <span class="modal-checkbox"
+              ><svg class="modal-check-icon" width="10" height="8">
+                <use href="./images/icon.svg#icon-checked"></use>
+              </svg>
+            </span>
             <span class="modal-form-agreement-text">
               I accept the terms and conditions of the
               <a class="modal-form-agreement-link" href="">Privacy Policy</a>
