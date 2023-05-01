@@ -604,20 +604,18 @@ justify-content: center;
 }
 .sub-container {
 display: flex;   
-flex-direction: row;
+flex-direction: column;
 color: var(--ultimate-white);
 position: relative;
 }
-.sub-label-container{
+.sub-input-container{
     display: flex;
-    flex-direction: column;
     
 }
-.sub-label {
+.sub-title {
     margin-bottom: 16px; 
 }
 .sub-input{
-    
     border: 1px solid var(--ultimate-white);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
@@ -647,7 +645,6 @@ position: relative;
     gap: 16px;
     width: 165px;
     height: 40px;
-    margin-top: 40px;
 
     background: var(--brand-color);
     color: var(--ultimate-white);
