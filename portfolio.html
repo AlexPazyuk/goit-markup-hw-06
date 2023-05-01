@@ -344,22 +344,28 @@
             </li>
           </ul>
         </div>
-        <div class="sub-container">
-          <label class="sub-label"
-            ><span class="sub-title">Subscribe</span
-            ><input class="sub-input" type="email" placeholder="E-mail" />
-          </label>
-        </div>
-        <div class="sub-button-container">
-          <button class="button sub-button" type="submit">
-            Subscribe
-            <span>
-              <svg class="icon sub-icon" width="24" height="24">
-                <use href="./images/icon.svg#icon-telegram"></use>
-              </svg>
-            </span>
-          </button>
-        </div>
+        <form class="sub-form" name="subscription-form">
+          <div class="sub-container">
+            <div class="sub-label-container">
+              <label class="sub-label" for="email-input">Subscribe</label>
+              <input
+                class="sub-input"
+                type="email"
+                id="email-input"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <button class="button sub-button" type="submit">
+              Subscribe
+              <span>
+                <svg class="icon sub-icon" width="24" height="24">
+                  <use href="./images/icon.svg#icon-telegram"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
